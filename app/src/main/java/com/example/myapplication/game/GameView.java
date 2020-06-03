@@ -51,7 +51,7 @@ public class GameView extends View {
     private List<MusicBean> allMusic;
     private int             musicIndex = 0;
     private boolean         isSuccess  = false;  //pass or not
-    private boolean         isFailure  = false;//failed
+    private boolean         isFailure  = false;//failed (do not pass)
     private boolean         stopState  = true;//game stop state
     private OnSuccess       successListener;
 
