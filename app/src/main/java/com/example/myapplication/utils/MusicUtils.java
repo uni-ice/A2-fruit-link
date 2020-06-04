@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 获取手机上全部音乐
+ * get all music on the phone
  */
 public class MusicUtils {
     private SqlUtils sql;
@@ -21,7 +21,7 @@ public class MusicUtils {
         sql = new SqlUtils(context);
     }
 
-    //插入数据
+    //add data
     public void add(MusicBean bean) {
         SQLiteDatabase writableDatabase = sql.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -30,7 +30,7 @@ public class MusicUtils {
         writableDatabase.insert("music", null, values);
     }
 
-    //获取全部数据
+    //get all data
     public List<MusicBean> getAll() {
         List<MusicBean> list = new ArrayList<>();
         SQLiteDatabase readableDatabase = sql.getReadableDatabase();
@@ -47,7 +47,7 @@ public class MusicUtils {
     }
 
 
-    //判断数据库是否为空
+    //judge whether the data set is null
     public boolean isExists() {
         SQLiteDatabase readableDatabase = sql.getReadableDatabase();
         Cursor cursor = readableDatabase.rawQuery("select * from music", new String[]{});

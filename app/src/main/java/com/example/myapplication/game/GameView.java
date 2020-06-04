@@ -185,7 +185,7 @@ public class GameView extends View {
         play(allMusic.get(musicIndex));
     }
 
-    //播放一首选中的音乐 play the selected music(BGM)
+    //play the selected music(BGM)
     private void play(MusicBean bean) {
         Log.e("tag", "切换音乐路径：" + bean.toString());
         if (sound) {

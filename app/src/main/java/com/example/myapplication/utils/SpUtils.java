@@ -8,7 +8,7 @@ import com.example.myapplication.MyApplication;
 
 
 /**
- * 共享参数工具类
+ * share parameters tools class
  */
 public class SpUtils {
 

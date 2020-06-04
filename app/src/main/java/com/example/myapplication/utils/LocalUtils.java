@@ -16,7 +16,7 @@ import java.util.Locale;
  */
 public class LocalUtils {
   /**
-   * 获取选择的语言设置
+   * get select language set
    * @param context
    * @return
    */
@@ -33,8 +33,8 @@ public class LocalUtils {
   }
 
   /**
-   * 获取系统的locale
-   * @return Locale对象
+   * get system locale
+   * @return Locale
    */
   public static Locale getSystemLocale(Context context) {
     Locale locale;

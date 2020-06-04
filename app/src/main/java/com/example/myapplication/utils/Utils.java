@@ -18,38 +18,36 @@ import java.util.Date;
 /*
  * Package    :com.example.myapplication.utils
  * ClassName  :Utils
- * Description:工具类
- * Data       :2020/3/24 13:42
+ * Description:tool class
+ * Data       :2020/4/24 13:42
  */
 public class Utils {
   /**
-   * drawable转bitmap
+   * drawable -> bitmap
    * @param drawable
-   *   drawable对象
-   * @return bitmap对象
+   *   drawable
+   * @return bitmap
    */
   public static Bitmap drawable2Bitmap(Drawable drawable) {
-    // 取 drawable 的长宽
+    // get drawable width and height
     int w = drawable.getIntrinsicWidth();
     int h = drawable.getIntrinsicHeight();
 
-    // 取 drawable 的颜色格式
+    // get drawable color format
     Bitmap.Config config = drawable.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888
       : Bitmap.Config.RGB_565;
-    // 建立对应 bitmap
+    // create correspond bitmap
     Bitmap bitmap = Bitmap.createBitmap(w, h, config);
-    // 建立对应 bitmap 的画布
+    // create correspond bitmap canvas
     Canvas canvas = new Canvas(bitmap);
     drawable.setBounds(0, 0, w, h);
-    // 把 drawable 内容画到画布中
+    // get drawable content into the canvas
     drawable.draw(canvas);
     return bitmap;
   }
 
   /**
-   * 获取显示指标
    * @param context
-   *   上下文
    * @return DsisplayMetrics
    */
   private static DisplayMetrics getDisplayMetrics(Context context) {
@@ -61,9 +59,8 @@ public class Utils {
   }
 
   /**
-   * 获取屏幕的宽度
+   * get window width
    * @param context
-   *   上下文
    * @return WindowWidth
    */
   public static int getWindowWidth(Context context) {
@@ -91,10 +88,10 @@ public class Utils {
 
 
   /**
-   * 格式化时间，自带格式
+   * format time
    * @param time
    *   时间
-   * @return 格式化后的时间
+   * @return time be formatted
    */
   public static String FormatTime(long time) {
     SimpleDateFormat format = new SimpleDateFormat("mm:ss");

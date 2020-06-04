@@ -3,24 +3,24 @@ package com.example.myapplication.utils;
 /*
  * Package    :com.example.myapplication.utils
  * ClassName  :StringUtils
- * Description:常量类
- * Data       :2020/3/25 11:55
+ * Description:constant class
+ * Data       :2020/4/25 11:55
  */
 public class StringUtils {
-  //音乐
+  //music
   public static final String Sound        = "sound";
-  //震动
+  //vibration
   public static final String Vibrate      = "vibrate";
-  //读取SD卡权限
+  //SD permission
   public static final String SD           = "sd";
-  //已开通关卡
+  //unlocked level
   public static final String Check        = "check";
-  //只添加一次默认的背景音乐
+  //only add one default BGM
   public static final String IsFirst      = "isfirst";
-  //语言
+  //language
   public static final String TAG_LANGUAGE = "tag_language";
-  //账号
+  //account
   public static final String PHONE        = "phone";
-  //密码
+  //password
   public static final String PASSWORD     = "password";
 }

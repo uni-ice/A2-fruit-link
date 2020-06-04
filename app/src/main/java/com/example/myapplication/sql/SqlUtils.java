@@ -16,7 +16,7 @@ import java.util.List;
 /*
  * Package    :com.example.myapplication.sql
  * ClassName  :SqlUtils
- * Description:Music Library Data set
+ * Description:Data set
  * Data       :2020/3/25 14:16
  */
 public class SqlUtils extends SQLiteOpenHelper {

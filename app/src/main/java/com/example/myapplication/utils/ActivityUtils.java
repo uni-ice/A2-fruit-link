@@ -6,7 +6,7 @@ import java.util.Stack;
 
 /**
  * Package    : com.example.baseutils
- * Date       : 2018/12/20 9:11
+ * Date       : 2020/5/20 9:11
  */
 public class ActivityUtils {
     private static ActivityUtils   mBaseUtils;
@@ -37,7 +37,7 @@ public class ActivityUtils {
         }
     }
 
-    //获取栈顶Activity
+    //get current Activity
     public static Activity getCurrentActivity() {
         if (mActivityList.size() == 0)
             return null;
@@ -45,7 +45,7 @@ public class ActivityUtils {
             return mActivityList.lastElement();
     }
 
-    //获取Act数组长度
+    //get act array list size
     public int getActivityListSize() {
         if (mActivityList != null)
             return mActivityList.size();
@@ -54,9 +54,9 @@ public class ActivityUtils {
     }
 
     /**
-     * 通过类名关闭Act
+     * finish Act according to classname
      * @param className
-     *         类名
+     *         classname
      */
     public void UseNamefinishAct(String className) {
         Activity activity = null;
@@ -77,9 +77,9 @@ public class ActivityUtils {
     }
 
     /**
-     * 通过类名获取Act
+     * 通过类名get Act according to classname
      * @param className
-     *         类名
+     *         classname
      */
     public static Activity UseNameGetAct(String className) {
         Activity activityWeakReference = null;

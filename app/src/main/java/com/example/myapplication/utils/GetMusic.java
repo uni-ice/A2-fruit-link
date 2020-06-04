@@ -9,7 +9,7 @@ import android.util.Log;
 import com.example.myapplication.sql.MusicBean;
 
 /**
- * 循环获取手机上全部音乐
+ * loop to get music in phone
  */
 public class GetMusic {
     private static SharedPreferences sp;
@@ -33,8 +33,8 @@ public class GetMusic {
                         .getColumnIndex(MediaStore.Audio.Media.DATA));
                 int time = c.getInt(c
                         .getColumnIndex(MediaStore.Audio.Media.DURATION));
-                Log.e("tag", "手机上的音乐：" + music_title + "---" + path);
-                //去除小于60秒的音乐
+                Log.e("tag", "music on the phone：" + music_title + "---" + path);
+                //delete music less than 60s
                 if (time < 60000) {
                     continue;
                 }
