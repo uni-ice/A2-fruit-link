@@ -21,8 +21,8 @@ import java.util.List;
 
 /*
  * Package    :com.example.myapplication
- * ClassName  :MusciActivity
- * Description:背景音乐设置界面
+ * ClassName  :MusicActivity
+ * Description:BGM page
  * Data       :2020/3/25 13:52
  */
 public class MusicActivity extends BaseActivity {

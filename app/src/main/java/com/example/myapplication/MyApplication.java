@@ -25,7 +25,7 @@ public class MyApplication extends Application {
   }
 
   /**
-   * 设置语言类型
+   * set language
    */
   public static void setApplicationLanguage(Context context) {
     Resources resources = context.getApplicationContext().getResources();

@@ -12,7 +12,7 @@ import java.util.TimerTask;
 /*
  * Package    :com.example.myapplication
  * ClassName  :SplashActivity
- * Description:欢迎界面
+ * Description:splash
  * Data       :2020/3/25 14:28
  */
 public class SplashActivity extends BaseActivity {

@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity {
     tv_about_me = findViewById(R.id.Main_AboutMe);
     tv_exit = findViewById(R.id.Main_Exit);
     requestPermission();
-    //开始游戏
+    //start game
     tv_start.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -43,7 +43,7 @@ public class MainActivity extends BaseActivity {
       }
     });
 
-    //游戏设置
+    //game setting
     tv_set.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -51,7 +51,7 @@ public class MainActivity extends BaseActivity {
       }
     });
 
-    //关于游戏
+    //about game
     tv_about_game.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -61,7 +61,7 @@ public class MainActivity extends BaseActivity {
       }
     });
 
-    //关于我们点击事件
+    //about us
     tv_about_me.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -71,7 +71,7 @@ public class MainActivity extends BaseActivity {
       }
     });
 
-    //退出游戏点击事件
+    //exit
     tv_exit.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -80,7 +80,7 @@ public class MainActivity extends BaseActivity {
     });
   }
 
-  //请求内存卡权限
+  //ask access about media (photos and media)
   void requestPermission() {
     AndPermission.with(this).permission(Permission.WRITE_EXTERNAL_STORAGE, Permission.READ_EXTERNAL_STORAGE)
       .onGranted(new Action() {

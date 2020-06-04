@@ -9,7 +9,7 @@ import com.example.myapplication.utils.Utils;
 
 
 /**
- * 注册界面
+ * register
  */
 public class RegisterActivity extends BaseActivity {
   EditText mPhone;
@@ -48,7 +48,7 @@ public class RegisterActivity extends BaseActivity {
     });
   }
 
-  //执行注册操作
+  //sign up
   public void Register(String num, String pass) {
     boolean b = sql.AddUser(num, pass);
     if (b) {

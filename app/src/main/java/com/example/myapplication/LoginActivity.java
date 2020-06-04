@@ -16,7 +16,7 @@ import com.example.myapplication.utils.Utils;
 
 
 /**
- * 登录界面
+ * Login page
  */
 
 public class LoginActivity extends BaseActivity {
@@ -70,7 +70,7 @@ public class LoginActivity extends BaseActivity {
     });
   }
 
-  //执行登陆操作
+  //login operate
   public void Login(final String num, final String pass) {
     if (!sql.findPass(num).equals(pass)) {
       Utils.showToast(Utils.getString(R.string.pass_error));

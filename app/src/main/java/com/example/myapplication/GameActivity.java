@@ -147,7 +147,7 @@ public class GameActivity extends BaseActivity {
     }
   }
 
-  //开始循环设置时间
+  //start loop to set time
   void startLooper(int time) {
     if (handler != null) {
       handler.removeCallbacks(timeRunn);
@@ -155,7 +155,7 @@ public class GameActivity extends BaseActivity {
     }
   }
 
-  //弹出过关的弹窗
+  //pop up pass
   void showSuccessDialog() {
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle("(*^▽^*)");
@@ -191,7 +191,7 @@ public class GameActivity extends BaseActivity {
     alertDialog.show();
   }
 
-  //弹出失败的弹窗
+  //pop up failure
   void showFailureDialog() {
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle("o(╥﹏╥)o");
@@ -215,7 +215,7 @@ public class GameActivity extends BaseActivity {
     alertDialog.show();
   }
 
-  //设置关卡名
+  //set level name
   public void setLevel() {
     tv_level.setText(mDifficulty + "");
   }

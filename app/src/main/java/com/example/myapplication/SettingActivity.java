@@ -16,7 +16,7 @@ import com.example.myapplication.utils.Utils;
 /*
  * Package    :com.example.myapplication
  * ClassName  :SettingActivity
- * Description:游戏设置界面
+ * Description:setting page
  * Data       :2020/3/25 11:51
  */
 public class SettingActivity extends BaseActivity {

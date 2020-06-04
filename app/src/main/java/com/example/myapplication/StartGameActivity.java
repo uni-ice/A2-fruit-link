@@ -17,13 +17,13 @@ import com.example.myapplication.utils.Utils;
 /*
  * Package    :com.example.myapplication
  * ClassName  :StartGameActivity
- * Description:开始游戏界面
+ * Description:start game page
  * Data       :2020/3/25 11:20
  */
 public class StartGameActivity extends BaseActivity {
   private RecyclerView recyclerView;
   private ImageView    img;
-  private int          args;//已开通关卡
+  private int          args;//the levels all ready can play
   private MyAdapter    myAdapter;
   private SqlUtils     utils;
 
@@ -67,7 +67,7 @@ public class StartGameActivity extends BaseActivity {
     @Override
     public void onBindViewHolder(@NonNull MyHolder myHolder, final int position) {
       myHolder.tv.setText(Utils.getString(R.string.level) + " " + (position + 1));
-      if ((position + 1) > args) {//没有开通
+      if ((position + 1) > args) {//the level can not play now
         myHolder.tv.setBackgroundResource(R.drawable.main_btn_gray);
       } else
         myHolder.tv.setBackgroundResource(R.drawable.main_btn);
